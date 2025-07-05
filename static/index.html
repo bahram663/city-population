@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>City Population App</title>
+</head>
+<body>
+  <h1>Add City</h1>
+  <form id="cityForm">
+    <input type="text" id="name" placeholder="City Name" required />
+    <input type="number" id="population" placeholder="Population" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    document.getElementById("cityForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const population = document.getElementById("population").value;
+
+      const response = await fetch("/city", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, population: parseInt(population) })
+      });
+
+      const data = await response.json();
+      document.getElementById("message").textContent = data.message || data.detail;
+    });
+  </script>
+</body>
+</html>
+
