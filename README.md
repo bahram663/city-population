@@ -29,5 +29,7 @@ For step-by-step installation, see [`docs/INSTALL.md`](docs/INSTALL.md)
 To build the Docker image manually:
 
 ```bash
+git clone https://github.com/bahram663/city-population.git
+cd city-population
 docker build -t your-dockerhub-user/city-population:latest ./app
 docker push your-dockerhub-user/city-population:latest
