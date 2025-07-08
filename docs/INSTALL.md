@@ -63,10 +63,10 @@ helm install city-app city-population/city-population \
   --create-namespace \
   --set elasticsearch.host=elasticsearch.elastic-system.svc.cluster.local
 ```
-Replace your-dockerhub-user if using a custom Docker image.
+You can use your-dockerhub-user if using a custom Docker image.
 
 5️⃣ Access the API
-Port forward the app to your local machine:
+Port forward the app to your local machine
 
 
 
