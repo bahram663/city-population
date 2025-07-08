@@ -23,9 +23,8 @@ docker push your-dockerhub-user/city-population:latest
 2️⃣ Deploy Elasticsearch (Manual, No Auth)
 We’ll create Elasticsearch using kubectl in a separate namespace:
 
-bash
-Copy
-Edit
+```bash
+
 kubectl create namespace elastic-system
 
 kubectl create deployment elasticsearch \
