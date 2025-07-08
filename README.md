@@ -5,8 +5,8 @@ This is a Python-based REST API for managing a list of cities and their populati
 ## 🔧 Features
 
 - `/health` - Health check endpoint
-- `/cities` - Insert or update a city's population
-- `/cities/{name}` - Retrieve the population of a city
+- `/city` - Insert or update a city's population
+- `/city/{name}` - Retrieve the population of a city
 - Elasticsearch as a backend database
 - Dockerized and packaged for Kubernetes via Helm
 
