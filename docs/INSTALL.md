@@ -7,9 +7,10 @@ This guide shows how to deploy the City Population app and Elasticsearch into a 
 ## 🧱 Prerequisites
 
 - Docker
-- Kubernetes cluster (Minikube, Kind, EKS, etc.)
+- Kubernetes cluster (Minikube, Kind, EKS, Microk8s etc.)
 - kubectl
 - Helm 3.x
+- Ingress (optional)
 - Docker Hub account (for image push, if needed)
 
 ---
