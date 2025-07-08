@@ -59,10 +59,10 @@ helm search repo city-population
 4️⃣ Install the App via Helm
 
 ```bash
-helm install city-app city-population/city-population \
-  --namespace city-system \
+helm install city-api city-population/city-api \
+  --namespace city-population \
   --create-namespace \
-  --set elasticsearch.host=elasticsearch.elastic-system.svc.cluster.local
+  --set elasticsearch.host=http://elasticsearch.elastic-system.svc.cluster.local:9200
 ```
 You can use your-dockerhub-user if using a custom Docker image.
 
