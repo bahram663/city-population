@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  city-api:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-07T16:44:55.0834492+04:00"
+    description: A Helm chart for deploying City Population API
+    digest: 5d6e2382a02a529ee79720e5d46a570781c8ee21fe4b8ed7d17c6e1efae47255
+    name: city-api
+    urls:
+    - https://bahram663.github.io/city-population/charts/city-api-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-07-07T16:44:55.0824157+04:00"
