@@ -18,12 +18,6 @@ This is a Python-based REST API for managing a list of cities and their populati
 - Kubernetes
 - Helm
 
-## 📦 Deployment
-
-The application can be deployed to any Kubernetes cluster. You can deploy it along with an Elasticsearch instance using Helm charts.
-
-For step-by-step installation, see [`docs/INSTALL.md`](docs/INSTALL.md)
-
 ## 🐳 Docker (optional)
 
 To build the Docker image manually:
