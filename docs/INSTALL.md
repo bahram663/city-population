@@ -70,8 +70,9 @@ You can use your-dockerhub-user if using a custom Docker image.
 Port forward the app to your local machine
 
 
-
+```bash
 kubectl port-forward svc/city-app 8000:80 -n city-system
+```
 6️⃣ Test the API
 
 Health:
