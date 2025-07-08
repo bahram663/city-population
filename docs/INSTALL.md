@@ -71,7 +71,7 @@ Port forward the app to your local machine
 
 
 ```bash
-kubectl port-forward svc/city-api 8000:80 -n city-system
+kubectl port-forward svc/city-api 8000:80 -n city-population
 ```
 6️⃣ Test the API
 
