@@ -14,11 +14,10 @@ This guide shows how to deploy the City Population app and Elasticsearch into a 
 
 ---
 
+```bash
 ## 1️⃣ Build & Push Docker Image (Optional)
 
 If you haven't pushed your own image yet:
-
-```bash
 docker build -t your-dockerhub-user/city-population:latest ./app
 docker push your-dockerhub-user/city-population:latest
 2️⃣ Deploy Elasticsearch (Manual, No Auth)
