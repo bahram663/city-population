@@ -85,7 +85,7 @@ Add/update city:
 
 
 ```bash
-curl -X POST http://localhost:8000/cities \
+curl -X POST http://localhost:8000/city \
   -H "Content-Type: application/json" \
   -d '{"name": "Baku", "population": 2300000}'
 ```
@@ -93,5 +93,5 @@ Get population:
 
 
 ```bash
-curl http://localhost:8000/cities/Baku
+curl http://localhost:8000/city/Baku
 ```
