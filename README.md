@@ -48,15 +48,9 @@ This guide shows how to deploy the City Population app and Elasticsearch into a 
 ---
 
 
-## 1️⃣ Build & Push Docker Image (Optional)
 
-If you haven't pushed your own image yet:
-```bash
-docker build -t your-dockerhub-user/city-population:latest ./app
-docker push your-dockerhub-user/city-population:latest
-```
 
-2️⃣ Deploy Elasticsearch (Manual, No Auth)
+## 1️⃣ Deploy Elasticsearch (Manual, No Auth)
 We’ll create Elasticsearch using kubectl in a separate namespace:
 
 
@@ -82,13 +76,13 @@ Wait until the pod is ready:
 kubectl get pods -n elastic-system -w
 ```
 
-3️⃣ Add the Helm Repo for City Population App
+2️⃣ Add the Helm Repo for City Population App
 ```bash
 helm repo add city-population https://bahram663.github.io/city-population/charts
 helm repo update
 helm search repo city-population
 ```
-4️⃣ Install the App via Helm
+3️⃣ Install the App via Helm
 
 ```bash
 helm install city-api city-population/city-api \
@@ -98,14 +92,14 @@ helm install city-api city-population/city-api \
 ```
 You can use your-dockerhub-user if using a custom Docker image.
 
-5️⃣ Access the API
+4️⃣ Access the API
 Port forward the app to your local machine
 
 
 ```bash
 kubectl port-forward svc/city-api 8000:80 -n city-population
 ```
-6️⃣ Test the API
+5️⃣ Test the API
 
 Health:
 
